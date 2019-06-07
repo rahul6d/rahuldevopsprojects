@@ -32,7 +32,7 @@ remote_file "wp-config-sample" do
 end
 file '/var/www/html/wordpress' do  
 mode '755'
-  owner 'root'
+  owner 'www-data'
 end
 execute "apache2" do
 command "service apache2 restart"
